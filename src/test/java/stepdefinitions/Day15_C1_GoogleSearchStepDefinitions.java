@@ -62,18 +62,17 @@ public class Day15_C1_GoogleSearchStepDefinitions {
 
     }
 
+    //paramatirized kullanildi
     @Given("kullanici {string} arar")
     public void kullanici_arar(String string) {
         googlePage.googleSearchBox.sendKeys(string + Keys.ENTER);
-
     }
 
     @Then("kullanici sonuclarda {string} oldugunu verify eder")
     public void kullanici_sonuclarda_oldugunu_verify_eder(String string) {
-      String title =  Driver.getDriver().getTitle();
-      Assert.assertTrue(title.contains(string));
+        String title = Driver.getDriver().getTitle();
+        Assert.assertTrue(title.contains(string));
     }
 
 }
 
-/// burasına bakkkkkkkkk
