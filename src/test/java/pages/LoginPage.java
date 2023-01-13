@@ -6,28 +6,25 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class LoginPage {
-      PageFactory.initElements(Driver.getDriver(),this);
+    public LoginPage(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+
+    @FindBy(id="UserName")
+    public WebElement username;
+
+    @FindBy(id="Password")
+    public WebElement password;
+
+    @FindBy(id="btnSubmit")
+    public WebElement loginButton;
+
+    @FindBy(id="details-button")
+    public WebElement advancedLink;
+
+    @FindBy(id="proceed-link")
+    public WebElement proceedLink;
 }
-
-@FindBy(id="UserName")
-public WebElement username;
-
-@FindBy(id="Password")
-public WebElement password;
-
-@FindBy(id="btnSubmit")
-public WebElement loginButton;
-
-@FindBy(id="details-button")
-public WebElement advancedLink;
-
-@FindBy(id="proceed-link")
-public WebElement proceedLink;
-        }
-
-
-
-
 
 
 

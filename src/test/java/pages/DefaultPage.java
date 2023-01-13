@@ -6,8 +6,9 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class DefaultPage {
-           PageFactory.initElements(Driver.getDriver(),this);
-}
+    public DefaultPage(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
 
     @FindBy(xpath = "//span[contains(@class, 'username')]")
     public WebElement userId;
@@ -18,4 +19,3 @@ public class DefaultPage {
     @FindBy(partialLinkText = "Room reservations")
     public WebElement roomReservationsLink;
 }
-
