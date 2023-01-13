@@ -12,6 +12,7 @@ public class Day15_C1_GoogleSearchStepDefinitions {
 
     GooglePage googlePage = new GooglePage();
 
+
     @Given("kullanici google sayfasindadir")
     public void kullanici_google_sayfasindadir() {
         Driver.getDriver().get(ConfigReader.getProperty("google_url"));
@@ -61,5 +62,18 @@ public class Day15_C1_GoogleSearchStepDefinitions {
 
     }
 
+    @Given("kullanici {string} arar")
+    public void kullanici_arar(String string) {
+        googlePage.googleSearchBox.sendKeys(string + Keys.ENTER);
+
+    }
+
+    @Then("kullanici sonuclarda {string} oldugunu verify eder")
+    public void kullanici_sonuclarda_oldugunu_verify_eder(String string) {
+      String title =  Driver.getDriver().getTitle();
+      Assert.assertTrue(title.contains(string));
+    }
 
 }
+
+/// burasına bakkkkkkkkk

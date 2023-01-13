@@ -8,10 +8,10 @@ import org.junit.runner.RunWith;
 
 // calıstırmak ıstediğim feature file yi belirtmem lazım
 @CucumberOptions(
-        features = "./src/test/resources/features/firstfeaturefile.feature",  //ZORUNLUDUR  -- dosyanın  pathini girmemiz lazım
+        features = "src/test/resources/features/Day16_C4_scenario_outline_2.feature",  //ZORUNLUDUR  -- dosyanın  pathini girmemiz lazım
         glue = "stepdefinitions", // ZORUNLUDUR => Stepdefinition adresi veya pathini yazıyoruz
-        tags = "@google_search",  // opsiyoneldir kullanılmayabilir  hangi feature file koşmalı onu belirtmeliyiz -- eger tags kullanmaz isek Runner tum featureleri run eder
-        dryRun = false          //opsiyoneldir yani yazmasakta false olur
+        tags = "@scenario_outline_2_google_arama",  // opsiyoneldir kullanılmayabilir  hangi feature file koşmalı onu belirtmeliyiz -- eger tags kullanmaz isek Runner tum featureleri run eder
+        dryRun = true        //opsiyoneldir yani yazmasakta false olur
 
 )
 
