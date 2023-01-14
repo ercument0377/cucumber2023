@@ -8,11 +8,10 @@ import org.junit.runner.RunWith;
 
 // calıstırmak ıstediğim feature file yi belirtmem lazım
 @CucumberOptions(
-        features = "src/test/resources/Sprint_13.05/Eagles/Day16_C5_US100450_kullanici_manager_kullanici_bilgilerini_kullanarak_login_yapmali.feature",  //ZORUNLUDUR  -- dosyanın  pathini girmemiz lazım
-        glue = "stepdefinitions", // ZORUNLUDUR => Stepdefinition adresi veya pathini yazıyoruz
-        tags = "@smoke and @tesla",  // opsiyoneldir kullanılmayabilir  hangi feature file koşmalı onu belirtmeliyiz -- eger tags kullanmaz isek Runner tum featureleri run eder
-        dryRun = false       //opsiyoneldir yani yazmasakta false olur
-
+        features = "src/test/resources/features/Sprint_13.06/Eagles/Day17_C6_US100451_oda_rezervasyonu.feature", // ZORUNLU  => Feature dosyanin pathini girmemiz laim
+        glue = "stepdefinitions", //ZORUNLU => Stepdefinition adresi ('path)'i
+        tags = "@room_rezervasyonu",// hangi feature file kosmali onu belirtiyoruz= > Eger tags kullanmaz isek Runner tum feature run eder
+        dryRun = false // opsiyoneldir
 )
 
 public class Runner {
