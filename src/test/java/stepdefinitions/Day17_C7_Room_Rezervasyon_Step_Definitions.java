@@ -1,11 +1,13 @@
 package stepdefinitions;
 
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.Given;
+import io.cucumber.java.en.*;
+import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
 import pages.DefaultPage;
 import pages.LoginPage;
 import pages.RoomRezervasyonPage;
+import utilities.Driver;
 
 import java.util.List;
 
@@ -25,14 +27,14 @@ public class Day17_C7_Room_Rezervasyon_Step_Definitions {
         loginPage.password.sendKeys(menajerKullaniciBilgileri.get(1));
     }
 
-    @Given("kullanıcı oda rezervasyon sayfasını yönlendirilir")
-    public void kullanıcı_oda_rezervasyon_sayfasını_yönlendirilir() {
+    @Given("kullanici oda rezervasyon sayfasini yonlendirilir")
+    public void kullanici_oda_rezervasyon_sayfasini_yonlendirilir() {
         defaultPage.hotelManagementLink.click();
         defaultPage.roomReservationsLink.click();
         roomRezervasyonPage.addRoomReservationButton.click();
     }
-    @Given("kullanıcı tüm zorunlu alanları girer")
-    public void kullanıcı_tüm_zorunlu_alanları_girer(DataTable roomData) {
+    @Given("kullanici tum zorunlu alanlari girer")
+    public void kullanici_tum_zorunlu_alanlari_girer(DataTable roomData) {
         List<String> testData =roomData.row(1);
         System.out.println(testData);//[manager, Harrison, 700, 01/17/2023, 01/30/2023, 2, 4, test, (850) 258-2565, test@gmail.com, bu datatable ile ilk test]
 
@@ -63,5 +65,28 @@ public class Day17_C7_Room_Rezervasyon_Step_Definitions {
         roomRezervasyonPage.notes.sendKeys(testData.get(10));
 
     }
+    @Given("kullanıcı approved checkbox’a click eder")
+    public void kullanıcı_approved_checkbox_a_click_eder() {
+        roomRezervasyonPage.isApproved.click();
+    }
+    @Given("kullanıcı paid check box’a click eder")
+    public void kullanıcı_paid_check_box_a_click_eder() {
+        roomRezervasyonPage.isPaid.click();
+    }
+    @Given("kullanıcı save button’una click eder")
+    public void kullanıcı_save_button_una_click_eder() {
+        roomRezervasyonPage.saveButton.click();
+
+    }
+    /*
+    @Then("kullanıcı success mesajını verify eder")
+    public void kullanıcı_success_mesajını_verify_eder() {
+        roomRezervasyonPage.successMessage
+        String title = Driver.getDriver().getTitle();
+        Assert.assertTrue(title.contains());
+    }
+
+     */
+
 
 }

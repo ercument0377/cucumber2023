@@ -7,6 +7,7 @@ import utilities.Driver;
 
 public class RoomRezervasyonPage {
     public RoomRezervasyonPage(){
+
         PageFactory.initElements(Driver.getDriver(), this);
     }
     @FindBy(xpath = "//span[@class='hidden-480']")
@@ -59,6 +60,8 @@ public class RoomRezervasyonPage {
 
     @FindBy(xpath = "//button[@data-bb-handler='ok']")
     public WebElement okButton;
+
+
 
 }
 
