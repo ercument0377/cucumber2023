@@ -8,7 +8,14 @@ import org.junit.runner.RunWith;
 
 // calıstırmak ıstediğim feature file yi belirtmem lazım
 @CucumberOptions(
-        features = "src/test/resources/features/Sprint_13.06/Eagles/Day17_C6_US100451_oda_rezervasyonu.feature", // ZORUNLU  => Feature dosyanin pathini girmemiz laim
+        plugin = {
+                "pretty",
+                "html:target/default-cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml",
+                "rerun:target/failedRerun.txt"
+        },
+        features = "src/test/resources", // ZORUNLU  => Feature dosyanin pathini girmemiz laim
         glue = "stepdefinitions", //ZORUNLU => Stepdefinition adresi ('path)'i
         tags = "@room_rezervasyonu",// hangi feature file kosmali onu belirtiyoruz= > Eger tags kullanmaz isek Runner tum feature run eder
         dryRun = false // opsiyoneldir
