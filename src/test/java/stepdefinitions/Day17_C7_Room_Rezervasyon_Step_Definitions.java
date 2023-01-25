@@ -10,6 +10,7 @@ import pages.RoomRezervasyonPage;
 import utilities.Driver;
 
 import java.util.List;
+import java.util.Map;
 
 public class Day17_C7_Room_Rezervasyon_Step_Definitions {
     LoginPage loginPage = new LoginPage();
@@ -18,13 +19,51 @@ public class Day17_C7_Room_Rezervasyon_Step_Definitions {
 
     @Given("kullanici  manager kullanici bilgilerini girer")
     public void kullanici_manager_kullanici_bilgilerini_girer(DataTable kullaniciBilgileri) {
+        /*
+        //1.yol
         List<String> menajerKullaniciBilgileri = kullaniciBilgileri.row(1);
         System.out.println(menajerKullaniciBilgileri);
         System.out.println(menajerKullaniciBilgileri.get(0));
         System.out.println(menajerKullaniciBilgileri.get(1));
-
         loginPage.username.sendKeys(menajerKullaniciBilgileri.get(0));
         loginPage.password.sendKeys(menajerKullaniciBilgileri.get(1));
+    */
+
+        //2.yol datayi  List<List<String>> olarak alma
+/*
+       List<List<String>> manajerBilgileri2 = kullaniciBilgileri.asLists();
+
+        System.out.println(manajerBilgileri2);//[[username, password], [manager, Manager1!]]
+        for (List<String> herBirBilgi : manajerBilgileri2 ){
+            System.out.println(herBirBilgi);
+            System.out.println(herBirBilgi.get(0));
+            System.out.println(herBirBilgi.get(1));
+            if (!herBirBilgi.get(0).equals("username")) {
+                loginPage.username.sendKeys(herBirBilgi.get(0));
+                loginPage.password.sendKeys(herBirBilgi.get(1));
+            }
+        }
+*/
+
+//3.yol datayi lambda ile alma
+        /*
+        List<List<String>> manajerBilgileri2 = kullaniciBilgileri.asLists();
+        manajerBilgileri2.stream().filter(t -> !(t.get(0).equals("username"))).forEach(t -> {
+            loginPage.username.sendKeys(t.get(0));
+            loginPage.password.sendKeys(t.get(1));
+        });
+*/
+
+//4.yol datayi List<Map<String, String>> alma  (en uygunu)
+        List<Map<String, String>> manejerBilgi3 = kullaniciBilgileri.asMaps(String.class, String.class);
+        System.out.println(manejerBilgi3); //[{username=manager, password=Manager1!}]
+        for (Map<String, String> herBirBilgi : manejerBilgi3){
+            System.out.println(herBirBilgi); //{username=manager, password=Manager1!}
+            loginPage.username.sendKeys(herBirBilgi.get("username"));
+            loginPage.password.sendKeys(herBirBilgi.get("password"));
+        }
+
+
     }
 
     @Given("kullanıcı oda rezervasyon sayfasını yönlendirilir")

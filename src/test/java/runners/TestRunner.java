@@ -1,5 +1,4 @@
 package runners;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -14,12 +13,11 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml",
                 "rerun:target/failedRerun.txt"
         },
-        // kosacak dosyanin adresi 'path" ==> @target/failedRerun.txt
-        features = "@target/failedRerun.txt",
-        glue = "stepdefinitions",
-        tags = "@manager_login_test",
+        features = "src/test/resources", // ZORUNLU  => Feature dosyanin pathini girmemiz laim
+        glue = "stepdefinitions", //ZORUNLU => Stepdefinition adresi ('path)'i
+        tags = "@manager_login_test",// hangi feature file kosmali onu belirtiyoruz= > Eger tags kullanmaz isek Runner tum feature run eder
         dryRun = false
 )
-public class FailedScenarioRunner {
-        
+
+public class TestRunner {
 }
