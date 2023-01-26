@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources", // ZORUNLU  => Feature dosyanin pathini girmemiz laim
         glue = "stepdefinitions", //ZORUNLU => Stepdefinition adresi ('path)'i
-        tags = "@manager_login_test",// hangi feature file kosmali onu belirtiyoruz= > Eger tags kullanmaz isek Runner tum feature run eder
+        tags = "@data_table_test",// hangi feature file kosmali onu belirtiyoruz= > Eger tags kullanmaz isek Runner tum feature run eder
         dryRun = false
 )
 

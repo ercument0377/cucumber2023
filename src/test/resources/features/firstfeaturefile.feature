@@ -30,10 +30,3 @@ Feature: Google_Search_Functionality
     Then kullanici sonuclarda volkswagen oldugunu verify eder
     Then kullanici application kapatir
 
-  @data
-  Scenario: TC5_dataTables_search
-    And kullanici new button’a Click eder
-    When kullanıcı tüm fields girer
-    When kullanıcı create buttona click eder
-    And kullanıcı first name arar
-    Then name fields’in first name içerdiğini verify eder

@@ -1,8 +1,6 @@
 package stepdefinitions;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
 import org.junit.Assert;
 import pages.DefaultPage;
 import pages.LoginPage;
@@ -14,11 +12,15 @@ import java.util.List;
 import java.util.Map;
 
 public class Day16_C6_LoginStepDefinitions {
+
     LoginPage loginPage = new LoginPage();
+
     DefaultPage defaultPage = new DefaultPage();
+
     @Given("kullanici application sayfasindadir")
     public void kullanici_application_sayfasindadir() {
         Driver.getDriver().get(ConfigReader.getProperty("qa_url_login"));
+
         try{
             Thread.sleep(1000);
             loginPage.advancedLink.click();
