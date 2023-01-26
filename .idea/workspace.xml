@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a50a3846-6076-4509-8124-17d58a603daa" name="Changes" comment="s">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/DataTablesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/Day19_C10_DataTablesStepDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/StaleException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/odev/Day19_C9_kullanici_yeni_data_ile_applicationa_giris_yapmali.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testData/data_tables_odev.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testData/data_tables_workbook.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/OdevDataTablesPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/Day16_C6_LoginStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/Day16_C6_LoginStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/Odev_Step_Definition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/firstfeaturefile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/firstfeaturefile.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/odev_scenario_3.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testData/data_tables_odev.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +51,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Asus\IdeaProjects\cucumber2023\src\test\resources\odev" />
       <recent name="C:\Users\Asus\IdeaProjects\cucumber2023\src\test\resources\testData" />
+      <recent name="C:\Users\Asus\IdeaProjects\cucumber2023\src\test\resources\odev" />
       <recent name="C:\Users\Asus\IdeaProjects\cucumber2023\target\xml-report" />
     </key>
   </component>
@@ -91,15 +77,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC02_Testing_Data_Table_with_dataTables (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC01_Testing_the_data_tables_web_page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/odev/odev_scenario_3.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/odev/Day19_C9_kullanici_yeni_data_ile_applicationa_giris_yapmali.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="cucumber2023" />
-      <option name="NAME_FILTER" value="^TC02_Testing_Data_Table_with_dataTables$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC02_Testing_Data_Table_with_dataTables$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC02_Testing_Data_Table_with_dataTables" />
+      <option name="NAME_FILTER" value="^TC01_Testing_the_data_tables_web_page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01_Testing_the_data_tables_web_page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC01_Testing_the_data_tables_web_page" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -111,15 +97,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC03_Testing_Data_Table_with_excel" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: tabloyu excel kullanarak olusturma" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/odev/odev_scenario_3.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/odev/Day19_C9_kullanici_yeni_data_ile_applicationa_giris_yapmali.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="cucumber2023" />
-      <option name="NAME_FILTER" value="^TC03_Testing_Data_Table_with_excel$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC03_Testing_Data_Table_with_excel$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC03_Testing_Data_Table_with_excel" />
+      <option name="NAME_FILTER" value="^tabloyu excel kullanarak olusturma$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^tabloyu excel kullanarak olusturma$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: tabloyu excel kullanarak olusturma" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -164,10 +150,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Scenario: TC01_Testing_the_data_tables_web_page" />
+        <item itemvalue="Cucumber Java.Scenario: tabloyu excel kullanarak olusturma" />
         <item itemvalue="JUnit.StaleException" />
         <item itemvalue="Cucumber Java.Scenario: TC01_Testing_data_tables_page" />
-        <item itemvalue="Cucumber Java.Scenario: TC03_Testing_Data_Table_with_excel" />
-        <item itemvalue="Cucumber Java.Scenario: TC02_Testing_Data_Table_with_dataTables (1)" />
       </list>
     </recent_temporary>
   </component>
