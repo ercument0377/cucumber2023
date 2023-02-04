@@ -30,8 +30,11 @@ public class StaleException {
         // DOM bagli bir sey yoktur
 
         try {
-            userName.sendKeys("manager");
-            password.sendKeys("Manager1!");
+            WebElement userName1 = driver.findElement(By.id("UserName"));
+            WebElement password1 = driver.findElement(By.id("Password"));
+            WebElement loginButon1 = driver.findElement(By.id("btnSubmit"));
+            userName1.sendKeys("manager");
+            password1.sendKeys("Manager1!");
             loginButon.click();
         }catch (Exception e){
 

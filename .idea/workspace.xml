@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a50a3846-6076-4509-8124-17d58a603daa" name="Changes" comment="s">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testData/data_tables_workbook.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runners/DBRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/database_step_definitions/Create_Step_Definitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/database_step_definitions/Read_Step_Definitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Database_feature/read.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/create.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testData/data_tables_odev.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/StaleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/StaleException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/odev/Day19_C9_kullanici_yeni_data_ile_applicationa_giris_yapmali.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/odev/Day19_C9_kullanici_yeni_data_ile_applicationa_giris_yapmali.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,16 +62,15 @@
       <recent name="C:\Users\Asus\IdeaProjects\cucumber2023\target\xml-report" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
-    <configuration name="Scenario: TC01_Testing_data_tables_page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DBRunner">
+    <configuration name="Feature: create" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/odev/odev_scenario_3.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/create.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="cucumber2023" />
-      <option name="NAME_FILTER" value="^TC01_Testing_data_tables_page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01_Testing_data_tables_page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC01_Testing_data_tables_page" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: create" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -77,15 +82,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC01_Testing_the_data_tables_web_page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: read" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/odev/Day19_C9_kullanici_yeni_data_ile_applicationa_giris_yapmali.feature" />
-      <option name="GLUE" value="stepdefinitions" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Database_feature/read.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="cucumber2023" />
-      <option name="NAME_FILTER" value="^TC01_Testing_the_data_tables_web_page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01_Testing_the_data_tables_web_page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC01_Testing_the_data_tables_web_page" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: read" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -97,15 +100,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: tabloyu excel kullanarak olusturma" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC01_read_otel_bilgileri" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/odev/Day19_C9_kullanici_yeni_data_ile_applicationa_giris_yapmali.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Database_feature/read.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="cucumber2023" />
-      <option name="NAME_FILTER" value="^tabloyu excel kullanarak olusturma$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^tabloyu excel kullanarak olusturma$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: tabloyu excel kullanarak olusturma" />
+      <option name="NAME_FILTER" value="^TC01_read_otel_bilgileri$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01_read_otel_bilgileri$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC01_read_otel_bilgileri" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -113,6 +116,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DBRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cucumber2023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.DBRunner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,28 +150,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaleException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cucumber2023" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stepdefinitions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="stepdefinitions" />
-      <option name="MAIN_CLASS_NAME" value="stepdefinitions.StaleException" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DBRunner" />
+        <item itemvalue="Cucumber Java.Feature: create" />
+        <item itemvalue="Cucumber Java.Feature: read" />
+        <item itemvalue="Cucumber Java.Scenario: TC01_read_otel_bilgileri" />
         <item itemvalue="JUnit.Runner" />
-        <item itemvalue="Cucumber Java.Scenario: TC01_Testing_the_data_tables_web_page" />
-        <item itemvalue="Cucumber Java.Scenario: tabloyu excel kullanarak olusturma" />
-        <item itemvalue="JUnit.StaleException" />
-        <item itemvalue="Cucumber Java.Scenario: TC01_Testing_data_tables_page" />
       </list>
     </recent_temporary>
   </component>
